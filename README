@@ -1,0 +1,31 @@
+Device-USB-PanicButton version 0.01
+===================================
+
+Perl Module to read status of the toy "USB Panic Button" under Unix/Windows:
+
+http://www.firebox.com/product/1742/USB-Panic-Button
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+C library: libusb -> http://libusb.sourceforge.net
+Perl module: Device::USB -> http://search.cpan.org/search?query=Device-USB
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2008 by Benjamin Kendinibilir
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.
+
