@@ -1,5 +1,8 @@
 Revision history for Perl extension Device::USB::PanicButton.
 
+0.02  Mon Jul 21 14:08:00 2008
+        update example code in perldoc
+
 0.01  Mon Jul 21 00:38:44 2008
 	first public version
 	- original version; created by h2xs 1.23 with options

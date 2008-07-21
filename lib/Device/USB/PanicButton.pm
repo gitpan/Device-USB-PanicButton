@@ -9,7 +9,7 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $VENDOR_ID = 0x1130;
 my $PRODUCT_ID = 0x0202;
@@ -135,15 +135,18 @@ Device::USB::PanicButton - interface to USB Panic Button
     use Device::USB::PanicButton;
 
     my $pbutton = Device::USB::PanicButton->new();
+
     if(!$pbutton || $pbutton->error()) {
         printf(STDERR "FATAL: ". $pbutton->error() ."\n");
         exit(-1);
     }
 
     while(1) {
-        if($pbutton->pressed() == 1) {
+        my $result = $pbutton->pressed();
+
+        if($result == 1) {
             printf("PANIC ;)\n");
-        } elsif($pbutton->pressed() < 0) {
+        } elsif($result < 0) {
             printf(STDERR "WARN: ". $pbutton->error() ."\n");
         }	
 
