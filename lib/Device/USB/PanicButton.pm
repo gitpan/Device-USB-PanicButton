@@ -9,7 +9,7 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my $VENDOR_ID = 0x1130;
 my $PRODUCT_ID = 0x0202;
@@ -178,7 +178,7 @@ pressed() returns:
 
 =head1 AUTHOR
 
-Benjamin Kendinibilir <bkendinibilir@mac.com>
+Benjamin Kendinibilir <cpan at kendinibilir.de>
 
 =head1 COPYRIGHT
 

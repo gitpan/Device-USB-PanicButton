@@ -1,4 +1,4 @@
-Device-USB-PanicButton version 0.02
+Device-USB-PanicButton version 0.03
 ===================================
 
 Perl Module to read status of the toy "USB Panic Button" under Unix/Windows:
