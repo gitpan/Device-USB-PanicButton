@@ -9,7 +9,7 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my $VENDOR_ID = 0x1130;
 my $PRODUCT_ID = 0x0202;
@@ -175,6 +175,10 @@ pressed() returns:
 
    libusb -> http://libusb.sourceforge.net
    Device::USB -> http://search.cpan.org/search?query=Device-USB
+
+=head1 MORE DOCUMENTATION
+
+see README for complete install instruction for Debian Etch.
 
 =head1 AUTHOR
 
